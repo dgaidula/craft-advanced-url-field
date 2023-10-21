@@ -98,7 +98,7 @@ class AdvancedUrlField extends Field implements PreviewableFieldInterface
 	 * @inheritdoc
 	 * @see craft\base\Field
 	 */
-	public function getInputHtml($value, ElementInterface $element = null): string
+	public function getInputHtml(mixed $value, ?\craft\base\ElementInterface $element = null): string
 	{
 		return Craft::$app->getView()->renderTemplate('advanced-url-field/_input', [
 			'field' => $this,
